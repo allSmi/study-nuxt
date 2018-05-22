@@ -39,7 +39,7 @@ export const actions = {
     },
 
     async logout({ commit }) {
-        await axios.post('http://localhost:3000/logout')
+        await axios.post('http://localhost:3000/api/logout')
         commit('SET_USER', null)
     }
 
