@@ -22,7 +22,7 @@ module.exports = {
         ]
     },
     css: [
-        '~/css/global.css'
+        '~/css/global.scss'
     ],
     router: {
         middleware: ['visits', 'user-agent']

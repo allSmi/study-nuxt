@@ -26,13 +26,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .user {
     font-family: sans-serif;
 
     margin-top: 100px;
 
     text-align: center;
+    h3 {
+        color: red;
+    }
 }
 
 </style>
