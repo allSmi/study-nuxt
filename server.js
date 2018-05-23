@@ -6,7 +6,7 @@ const app = require('express')()
 let nuxtConfig = require('./nuxt.config.js')
 // let getUserInfoBySession = require('../utils').getUserInfoBySession;
 
-var apiRouter = require('./api/index-route') //express.Router()
+let apiRouter = require('./api') //express.Router()
 
 // Body parser，用来封装 req.body
 app.use(bodyParser.json())
