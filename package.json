@@ -2,11 +2,12 @@
   "name": "my-app",
   "scripts": {
     "dev": "nuxt",
-    "dev1": "node server.js",
+    "dev1": "backpack",
     "generate": "nuxt generate"
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "backpack-core": "^0.7.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",

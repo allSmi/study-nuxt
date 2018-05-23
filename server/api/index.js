@@ -1,9 +1,9 @@
 // 模块化api
-let user = require('./user')
+import user from './user'
 
 let express = require('express')
 let router = express.Router()
 
 router.use(user)
 
-module.exports = router;
+export default router;

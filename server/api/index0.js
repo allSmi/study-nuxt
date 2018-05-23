@@ -1,3 +1,5 @@
+// nuxt.config.js 中 serverMiddleware 使用
+
 let express = require('express')
 
 // Create express router
