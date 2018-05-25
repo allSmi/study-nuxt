@@ -2,11 +2,11 @@
   "name": "my-app",
   "scripts": {
     "dev": "nuxt",
-    "dev1": "backpack",
+    "dev1": "backpack dev",
     "generate": "nuxt generate",
     "analyze": "nuxt build --analyze",
-    "build": "nuxt build",
-    "start": "NODE_ENV=production backpack"
+    "build": "nuxt build && backpack build",
+    "start": "NODE_ENV=production node build/main.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
