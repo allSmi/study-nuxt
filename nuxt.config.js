@@ -10,7 +10,7 @@ module.exports = {
     //       })
     //     }
     //   }
-    // loading: '~/components/loading.vue'
+    // loading: '~/components/loading.vue',
     head: {
         meta: [
             { charset: 'utf-8' },
@@ -22,12 +22,17 @@ module.exports = {
         ]
     },
     css: [
-        '~/assets/global.scss'
+        '~assets/global.scss'
     ],
     router: {
         middleware: ['visits', 'user-agent']
     },
     plugins: [{ src: '~/plugins/vue-notifications', ssr: 'false' }],
+    build: {
+        verdor: ['axios', '~/plugins/vue-notifications'],
+        // publicPath: 'https://cdn.nuxtjs.org', // 设置cdn地址，如果找不到文件，发生回源
+        // analyze: true
+    }
     // serverMiddleware: [
     //     // body-parser middleware
     //     bodyParser.json(),

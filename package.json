@@ -3,7 +3,10 @@
   "scripts": {
     "dev": "nuxt",
     "dev1": "backpack",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "analyze": "nuxt build --analyze",
+    "build": "nuxt build",
+    "start": "NODE_ENV=production backpack"
   },
   "dependencies": {
     "axios": "^0.18.0",
