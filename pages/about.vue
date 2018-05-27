@@ -22,8 +22,6 @@ export default {
   watchQuery:['page'],//监听router.query.page变化，调用组件的方法
   transition: "bounce",
   key: (to) => {
-    // console.log(to);
-
     return to.fullPath
   }, //如果不加key，那么query变化时，不会触发动画,因为会认为组件没有改变，如果key变了，会认为组件变化了，会触发动画
   async asyncData({ req ,route,query}) {
@@ -74,6 +72,10 @@ export default {
   created() {
     // console.log(1111);
   },
+
+  // beforeMount(){
+  //   console.log(1111);
+  // },
   // client端执行
   mounted() {
     // console.log(333);

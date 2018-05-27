@@ -9,8 +9,15 @@ module.exports = {
     //         maxAge: 1000 * 60 * 15
     //       })
     //     }
-    //   }
+    //   },
     // loading: '~/components/loading.vue',
+    // mode: 'spa',
+    // loadingIndicator: {
+    //     name: 'circle',
+    //     color: '#3B8070',
+    //     background: 'white'
+    // }, // 当mode为spa模式生效
+    dev: (process.env.NODE_ENV !== 'production'),
     head: {
         meta: [
             { charset: 'utf-8' },
@@ -19,6 +26,9 @@ module.exports = {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        ],
+        script: [
+            { src: 'http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js' }
         ]
     },
     css: [

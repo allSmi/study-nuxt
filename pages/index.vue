@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>Hello world!</h1>
-    <!-- <nuxt-link :to="{name:'about',query:{num: 2}}">about</nuxt-link> /about?num=2 -->
+    <h1 class="title">Hello world!</h1>
+    <!-- /about?num=2 -->
+    <!-- <nuxt-link :to="{name:'about',query:{num: 2}}" target="_blank">about</nuxt-link> -->
     <nuxt-link to="/about">about</nuxt-link>
     <br/>
     <nuxt-link :to="{name:'slug',params:{slug:'bar'}}">slug</nuxt-link>
@@ -75,6 +76,7 @@ export default {
 
   methods: {
     greet() {
+      console.log($('.title')[0].getBoundingClientRect());
       console.log("greet");
     },
     async login() {
